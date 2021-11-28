@@ -14,8 +14,17 @@ dependencies {
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
 
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
+
+    testImplementation("org.assertj:assertj-core:3.11.1")
 }
 
-tasks.named<Test>("test") {
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+    kotlinOptions.jvmTarget = "11"
+}
+
+tasks.withType<Test> {
     useJUnitPlatform()
+    testLogging {
+        events("passed", "skipped", "failed")
+    }
 }
