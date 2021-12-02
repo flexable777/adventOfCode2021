@@ -9,14 +9,14 @@ internal class ImplementationTest {
 
     @Test
     fun `original test part 1`() {
-        val lines = File("src/test/resources/test_data_part1.txt").readLines().map { it.toLong() }
+        val lines = File("src/test/resources/test_data_part1.txt").readLines().map { it.toInt() }
 
         assertThat(processPart1(lines)).isEqualTo(7)
     }
 
     @Test
     fun `actual run part 1`() {
-        val lines = File("src/test/resources/actual_data_part1.txt").readLines().map { it.toLong() }
+        val lines = File("src/test/resources/actual_data_part1.txt").readLines().map { it.toInt() }
 
         val millis = measureTimeMillis {
             println("Actual run part 1: " + processPart1(lines))
@@ -26,14 +26,14 @@ internal class ImplementationTest {
 
     @Test
     fun `original test part 2`() {
-        val lines = File("src/test/resources/test_data_part2.txt").readLines().map { it.toLong() }
+        val lines = File("src/test/resources/test_data_part2.txt").readLines().map { it.toInt() }
 
         assertThat(processPart2(lines)).isEqualTo(5)
     }
 
     @Test
     fun `actual run part 2`() {
-        val lines = File("src/test/resources/actual_data_part2.txt").readLines().map { it.toLong() }
+        val lines = File("src/test/resources/actual_data_part2.txt").readLines().map { it.toInt() }
 
         val millis = measureTimeMillis {
             println("Actual run part 2: " + processPart2(lines))
