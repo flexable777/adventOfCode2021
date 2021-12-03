@@ -2,7 +2,7 @@ package no.jitk.advent
 
 class Implementation3 {
 
-    fun processPart1(lines: List<String>): Int {
+    fun processDay3Part1(lines: List<String>): Int {
         val gamma = lines[0].indices.joinToString(separator = "") { i ->
             if (lines.map { l -> l[i] }.count { it == '1' } > lines.size / 2) "1" else "0"
         }
@@ -12,7 +12,7 @@ class Implementation3 {
             .toInt(2)
     }
 
-    fun processPart2(lines: List<String>): Long {
+    fun processDay3Part2(lines: List<String>): Long {
         val oxygenRating = getRating(lines)
         val coScrubberRating = getRating(lines, wantsOxygenRating = false)
         return coScrubberRating.toLong(2) * oxygenRating.toLong(2)

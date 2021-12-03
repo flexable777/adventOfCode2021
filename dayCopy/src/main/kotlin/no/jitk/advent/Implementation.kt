@@ -1,12 +1,9 @@
 package no.jitk.advent
 
-class Implementation {
+fun processDayXPart1(lines: List<String>): Int {
+    return 0
+}
 
-    fun processPart1(lines: List<String>): Int {
-        return 0
-    }
-
-    fun processPart2(lines: List<String>): Int {
-        return 0
-    }
+fun processDayXPart2(lines: List<String>): Int {
+    return 0
 }

@@ -2,7 +2,7 @@ package no.jitk.advent
 
 class Implementation {
 
-    fun processPart1(commands: List<Pair<String, Int>>): Int {
+    fun processDay2Part1(commands: List<Pair<String, Int>>): Int {
         var horPos = 0
         var depth = 0
 
@@ -17,7 +17,7 @@ class Implementation {
         return horPos * depth
     }
 
-    fun processPart2(commands: List<Pair<String, Int>>): Int {
+    fun processDay2Part2(commands: List<Pair<String, Int>>): Int {
         var horPos = 0
         var depth = 0
         var aim = 0

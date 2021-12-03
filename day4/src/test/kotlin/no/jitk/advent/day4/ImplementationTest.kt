@@ -1,17 +1,17 @@
-package no.jitk.advent
+package no.jitk.advent.day4
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import java.io.File
 import kotlin.system.measureTimeMillis
 
-internal class Implementation3Test {
+internal class ImplementationTest {
 
     @Test
     fun `original test part 1`() {
         val lines = File("src/test/resources/test_data.txt").readLines()
 
-        assertThat(Implementation3().processDay3Part1(lines)).isEqualTo(198)
+        assertThat(processDay4Part1(lines)).isEqualTo(0)
     }
 
     @Test
@@ -19,7 +19,7 @@ internal class Implementation3Test {
         val lines = File("src/test/resources/actual_data.txt").readLines()
 
         val millis = measureTimeMillis {
-            println("Actual run part 1: " + Implementation3().processDay3Part1(lines))
+            println("Actual run part 1: " + processDay4Part1(lines))
         }
         println("part 1 took $millis millis to run")
     }
@@ -28,7 +28,7 @@ internal class Implementation3Test {
     fun `original test part 2`() {
         val lines = File("src/test/resources/test_data.txt").readLines()
 
-        assertThat(Implementation3().processDay3Part2(lines)).isEqualTo(230)
+        assertThat(processDay4Part2(lines)).isEqualTo(0)
     }
 
     @Test
@@ -36,9 +36,10 @@ internal class Implementation3Test {
         val lines = File("src/test/resources/actual_data.txt").readLines()
 
         val millis = measureTimeMillis {
-            println("Actual run part 2: " + Implementation3().processDay3Part2(lines))
+            println("Actual run part 2: " + processDay4Part2(lines))
         }
         println("part 2 took $millis millis to run")
+
     }
 
 }

@@ -15,7 +15,7 @@ internal class ImplementationTest {
                 s.first() to s[1].toInt()
             }
 
-        assertThat(Implementation().processPart1(commands)).isEqualTo(150)
+        assertThat(Implementation().processDay2Part1(commands)).isEqualTo(150)
     }
 
     @Test
@@ -27,7 +27,7 @@ internal class ImplementationTest {
             }
 
         val millis = measureTimeMillis {
-            println("Actual run part 1: " + Implementation().processPart1(commands))
+            println("Actual run part 1: " + Implementation().processDay2Part1(commands))
         }
         println("part 1 took $millis millis to run")
     }
@@ -40,7 +40,7 @@ internal class ImplementationTest {
                 s.first() to s[1].toInt()
             }
 
-        assertThat(Implementation().processPart2(commands)).isEqualTo(900)
+        assertThat(Implementation().processDay2Part2(commands)).isEqualTo(900)
     }
 
     @Test
@@ -52,7 +52,7 @@ internal class ImplementationTest {
             }
 
         val millis = measureTimeMillis {
-            println("Actual run part 2: " + Implementation().processPart2(commands))
+            println("Actual run part 2: " + Implementation().processDay2Part2(commands))
         }
         println("part 2 took $millis millis to run")
     }
