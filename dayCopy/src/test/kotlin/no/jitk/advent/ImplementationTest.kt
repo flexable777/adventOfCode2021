@@ -16,7 +16,7 @@ internal class ImplementationTest {
 
     @Test
     fun `actual run part 1`() {
-        val lines = File("src/test/resources/test_data_part1.txt").readLines()
+        val lines = File("src/test/resources/actual_data_part1.txt").readLines()
 
         val millis = measureTimeMillis {
             println("Actual run part 1: " + Implementation().processPart1(lines))
@@ -26,7 +26,7 @@ internal class ImplementationTest {
 
     @Test
     fun `original test part 2`() {
-        val lines = File("src/test/resources/actual_data_part2.txt").readLines()
+        val lines = File("src/test/resources/test_data_part2.txt").readLines()
 
         assertThat(Implementation().processPart2(lines)).isEqualTo(0)
     }
