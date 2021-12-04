@@ -1,4 +1,4 @@
-package no.jitk.advent
+package no.jitk.advent.dayx
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test

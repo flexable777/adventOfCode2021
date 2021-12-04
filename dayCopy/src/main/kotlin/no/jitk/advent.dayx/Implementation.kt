@@ -1,4 +1,4 @@
-package no.jitk.advent
+package no.jitk.advent.dayx
 
 fun processDayXPart1(lines: List<String>): Int {
     return 0
