@@ -2,7 +2,7 @@ package no.jitk.advent.day4
 
 
 fun processDay4Part1(lines: MutableList<String>): Int {
-    val (draws, boards) = pair(lines)
+    val (draws, boards) = parseInput(lines)
 
     val drawn = mutableListOf<Int>()
 
@@ -25,7 +25,7 @@ fun processDay4Part1(lines: MutableList<String>): Int {
 }
 
 fun processDay4Part2(lines: MutableList<String>): Int {
-    val (draws, boards) = pair(lines)
+    val (draws, boards) = parseInput(lines)
 
     val drawn = mutableListOf<Int>()
 
@@ -53,7 +53,7 @@ fun processDay4Part2(lines: MutableList<String>): Int {
 
 private fun isOnlyOneBoardLeft(boards: List<Board>) = boards.count { !it.hasWon } == 1
 
-private fun pair(lines: MutableList<String>): Pair<List<Int>, List<Board>> {
+private fun parseInput(lines: MutableList<String>): Pair<List<Int>, List<Board>> {
     val draws = lines.first().split(",").map { it.toInt() }
 
     val sublist = lines.subList(2, lines.size)
