@@ -11,7 +11,7 @@ internal class ImplementationTest {
     fun `original test part 1`() {
         val lines = File("src/test/resources/test_data.txt").readLines()
 
-        assertThat(processDay5Part1(lines)).isEqualTo(-1)
+        assertThat(processDay5Part1(lines)).isEqualTo(5)
     }
 
     @Test
@@ -27,8 +27,7 @@ internal class ImplementationTest {
     @Test
     fun `original test part 2`() {
         val lines = File("src/test/resources/test_data.txt").readLines()
-
-        assertThat(processDay5Part2(lines)).isEqualTo(0)
+        assertThat(processDay5Part2(lines)).isEqualTo(12)
     }
 
     @Test
@@ -39,7 +38,6 @@ internal class ImplementationTest {
             println("Actual run part 2: " + processDay5Part2(lines))
         }
         println("part 2 took $millis millis to run")
-
     }
 
 }
