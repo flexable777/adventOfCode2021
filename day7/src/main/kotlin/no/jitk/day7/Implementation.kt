@@ -1,4 +1,4 @@
-package no.jitk.advent.dayx
+package no.jitk.day7
 
 import kotlin.math.absoluteValue
 

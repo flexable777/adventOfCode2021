@@ -1,4 +1,4 @@
-package no.jitk.advent.dayx
+package no.jitk.advent.day8
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
@@ -11,7 +11,7 @@ internal class ImplementationTest {
     fun `original test part 1`() {
         val lines = File("src/test/resources/test_data.txt").readLines()
 
-        assertThat(processDay7Part1(lines)).isEqualTo(37)
+        assertThat(processDay8Part1(lines)).isEqualTo(0)
     }
 
     @Test
@@ -19,7 +19,7 @@ internal class ImplementationTest {
         val lines = File("src/test/resources/actual_data.txt").readLines()
 
         val millis = measureTimeMillis {
-            println("Actual run part 1: " + processDay7Part1(lines))
+            println("Actual run part 1: " + processDay8Part1(lines))
         }
         println("part 1 took $millis millis to run")
     }
@@ -28,7 +28,7 @@ internal class ImplementationTest {
     fun `original test part 2`() {
         val lines = File("src/test/resources/test_data.txt").readLines()
 
-        assertThat(processDay7Part2(lines)).isEqualTo(168)
+        assertThat(processDay8Part2(lines)).isEqualTo(0)
     }
 
     @Test
@@ -36,9 +36,10 @@ internal class ImplementationTest {
         val lines = File("src/test/resources/actual_data.txt").readLines()
 
         val millis = measureTimeMillis {
-            println("Actual run part 2: " + processDay7Part2(lines))
+            println("Actual run part 2: " + processDay8Part2(lines))
         }
         println("part 2 took $millis millis to run")
+
     }
 
 }
