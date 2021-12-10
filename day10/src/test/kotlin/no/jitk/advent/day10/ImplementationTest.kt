@@ -11,7 +11,7 @@ internal class ImplementationTest {
     fun `original test part 1`() {
         val lines = File("src/test/resources/test_data.txt").readLines()
 
-        assertThat(processDay10Part1(lines)).isEqualTo(0)
+        assertThat(processDay10Part1(lines)).isEqualTo(26397)
     }
 
     @Test
@@ -28,7 +28,7 @@ internal class ImplementationTest {
     fun `original test part 2`() {
         val lines = File("src/test/resources/test_data.txt").readLines()
 
-        assertThat(processDay10Part2(lines)).isEqualTo(0)
+        assertThat(processDay10Part2(lines)).isEqualTo(288957)
     }
 
     @Test
