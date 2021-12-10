@@ -60,11 +60,12 @@ fun processDay10Part2(lines: List<String>): Long {
     completions.forEach { line ->
         var score = 0L
         line.forEach { c ->
+            score *= 5
             when (c) {
-                ')' -> score = score * 5 + 1
-                ']' -> score = score * 5 + 2
-                '}' -> score = score * 5 + 3
-                '>' -> score = score * 5 + 4
+                ')' -> score += 1
+                ']' -> score += 2
+                '}' -> score += 3
+                '>' -> score += 4
             }
         }
         totalScores += score
