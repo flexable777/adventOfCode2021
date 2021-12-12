@@ -8,10 +8,10 @@ import kotlin.system.measureTimeMillis
 internal class ImplementationTest {
 
     @Test
-    fun `original test part 1`() {
+    fun `test part 1`() {
         val lines = File("src/test/resources/test_data.txt").readLines()
 
-        assertThat(processDay12Part1(lines)).isEqualTo(-1)
+        assertThat(processDay12Part1(lines)).isEqualTo(226)
     }
 
     @Test
@@ -25,10 +25,10 @@ internal class ImplementationTest {
     }
 
     @Test
-    fun `original test part 2`() {
+    fun `test part 2`() {
         val lines = File("src/test/resources/test_data.txt").readLines()
 
-        assertThat(processDay12Part2(lines)).isEqualTo(0)
+        assertThat(processDay12Part2(lines)).isEqualTo(3509)
     }
 
     @Test
